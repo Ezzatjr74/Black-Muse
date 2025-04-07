@@ -173,7 +173,7 @@ p {
   overflow: hidden;
   border-radius: 30px;
   height: 307px;
-  width: 460px;
+  width: 90%;
 }
 .bindery-card .info-bindery {
   position: absolute;
@@ -241,6 +241,41 @@ p {
 }
 .followus-section .brands-icon i:hover {
   color: #C1B585;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .respnsive-section {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .respnsive-section div {
+    columns: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .respnsive-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    gap: 20px;
+  }
+  .respnsive-section div {
+    columns: 1;
+  }
+}
+.contact-us-form {
+  border: 1px solid rgba(255, 255, 255, 0.5411764706);
+  border-radius: 30px;
+  padding: 20px;
+}
+.contact-us-form input, .contact-us-form textarea {
+  border: 1px solid rgba(255, 255, 255, 0.5411764706);
+}
+.contact-us-form input::placeholder, .contact-us-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5411764706);
 }
 
 /*# sourceMappingURL=styles.css.map */
