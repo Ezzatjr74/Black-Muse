@@ -17,7 +17,7 @@
   <!-- main navbar -->
   <nav class="navbar navbar-expand-sm bg-main border-body pt-4" data-bs-theme="dark">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/main.html">
         <img src="./images/mainLogo.svg" alt="Bootstrap" width="122" height="86">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
@@ -27,10 +27,26 @@
 
       <div class="collapse navbar-collapse  d-md-flex flex-column align-items-end " id="navbarToggler">
         <div class="d-flex gap-2 ">
-          <button class="btn  btn-outline-light rounded-4"> <i class="fa-solid fa-arrow-right-to-bracket"></i>
-            Login</button>
-          <button class="btn  bg-white text-black rounded-4"><i class="fa-solid fa-user-plus"></i>
-            Register</button>
+          <div class="dropdown">
+            <div class="d-flex align-items-center gap-1 btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="h-100 w-100 overflow-hidden">
+                <img src="./images/profile.png" alt="" srcset="">
+              </div>
+              <p class="text-white fw-light d-flex gap-1 align-items-center">
+                Welcome, <span class="fw-bold">Remon Nabil</span>
+                <i class="fas fa-chevron-down dropdown-icon"></i>
+              </p>
+            </div>
+            <ul class="dropdown-menu bg-main">
+              <li><button class="dropdown-item" type="button"><i class="fa-regular fa-user"></i> Profile</button></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><button class="dropdown-item" type="button"> <i class="fa-solid fa-arrow-right-from-bracket"></i> Log
+                  Out</button></li>
+            </ul>
+          </div>
           <button class="text-white btn"> <i class="fa-solid fa-globe"></i> عربي</button>
         </div>
 
@@ -98,7 +114,7 @@
 
         <div class="col-md-9">
           <div class="tab-content pe-0 ps-md-2" id="myTabContent">
-            <!-- Form Content -->
+            <!-- Form Info Tab -->
             <form class="tab-pane fade show active" id="info-tab-pane" role="tabpanel" aria-labelledby="info-tab">
               <div class="row">
                 <!-- First Name -->
@@ -185,188 +201,244 @@
 
             <!-- Booked Services Tab -->
 
-            <div class="tab-pane fade table-profile" id="booked-tab-pane" role="tabpanel" aria-labelledby="booked-tab">
-              <div class="table-header">
-                <h5 class="mb-0">
-                  <i class="fa-regular fa-file-lines"></i>
-                  Your Booked Services
-                </h5>
-              </div>
-              <div class="table-responsive ">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>ID</th>
-                      <th>Service Name</th>
-                      <th>Event Date</th>
-                      <th>Booking Date</th>
-                      <th>Total Amount</th>
-                      <th>Paid Amount</th>
-                      <th>Status</th>
-                      <th>Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#255</td>
-                      <td>Wedding Service</td>
-                      <td>24 Dec 2024</td>
-                      <td>18 Nov 2024</td>
-                      <td>3000 <span class="small">SAR</span></td>
-                      <td>1000 <span class="small">SAR</span></td>
-                      <td>In-Progress</td>
-                      <td>
-                        <a class="btn border rounded" type="button">
-                          <i class="fa-solid fa-arrow-right text-white"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>#255</td>
-                      <td>Wedding Service</td>
-                      <td>24 Dec 2024</td>
-                      <td>18 Nov 2024</td>
-                      <td>3000 <span class="small">SAR</span></td>
-                      <td>3000 <span class="small">SAR</span></td>
-                      <td><span class="status-badge status-completed">Completed</span></td>
-                      <td>
-                        <a class="btn border rounded" type="button">
-                          <i class="fa-solid fa-arrow-right text-white"></i>
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <!-- View List Services Tab -->
-
-              <div class="table-header">
-                <p>#255 Wedding Service</p>
-                <h3 class="fs-md-3 fs-5">
-                  Your Meeting Confirmed
-                  <span class="bg-white text-black rounded px-1">
-                    <i class="fas fa-check"></i>
-                  </span>
-                </h3>
+            <div class="tab-pane fade " id="booked-tab-pane" role="tabpanel" aria-labelledby="booked-tab">
+              <!-- List BOOKED -->
+              <div class="table-profile">
+                <div class="table-header">
+                  <h5 class="mb-0">
+                    <i class="fa-regular fa-file-lines"></i>
+                    Your Booked Services
+                  </h5>
+                </div>
+                <div class="table-responsive ">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Service Name</th>
+                        <th>Event Date</th>
+                        <th>Booking Date</th>
+                        <th>Total Amount</th>
+                        <th>Paid Amount</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#255</td>
+                        <td>Wedding Service</td>
+                        <td>24 Dec 2024</td>
+                        <td>18 Nov 2024</td>
+                        <td>3000 <span class="small">SAR</span></td>
+                        <td>1000 <span class="small">SAR</span></td>
+                        <td>In-Progress</td>
+                        <td>
+                          <a class="btn border rounded" type="button">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>#255</td>
+                        <td>Wedding Service</td>
+                        <td>24 Dec 2024</td>
+                        <td>18 Nov 2024</td>
+                        <td>3000 <span class="small">SAR</span></td>
+                        <td>3000 <span class="small">SAR</span></td>
+                        <td><span class="status-badge status-completed">Completed</span></td>
+                        <td>
+                          <a class="btn border rounded" type="button">
+                            <i class="fa-solid fa-arrow-right text-white"></i>
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
-              <!-- View Meeting  -->
+              <!-- View ONE -->
+              <div class="table-profile">
 
-              <div class="row d-flex align-items-center p-4">
-                <!-- Left Column -->
-                <div class="col-md-6">
-                  <div class="d-flex flex-column gap-2">
-                    <h5>Why we need this meeting:</h5>
-                    <span class="py-2 fw-lighter">
-                      Text to explain why user should pay this downpayment Text to explain why user should pay this
-                      downpayment and so on.
+                <div class="table-header">
+                  <p>#255 Wedding Service</p>
+                  <h3 class="fs-md-3 fs-5">
+                    Your Meeting Confirmed
+                    <span class="bg-white text-black rounded px-1">
+                      <i class="fas fa-check"></i>
                     </span>
-                    <button class="btn bg-white mb-4 fw-bold text-black rounded-3">
-                      <i class="far fa-calendar-plus"></i>
-                      Add to your Calendar
-                    </button>
-                  </div>
+                  </h3>
                 </div>
-                <!-- Right Column -->
-                <div class="col-md-6">
-                  <div class="rounded-5" style="border: 1px solid rgba(255, 255, 255, 0.1);">
-                    <div class="table-header">
-                      <h5>Your Meeting Details</h5>
-                    </div>
-                    <div class="p-3 ps-5">
-                      <ul class="meeting-details-list d-flex flex-column gap-3">
-                        <li>
-                          <span class="label">Meeting Date:</span>
-                          <span>18 Dec 2024</span>
-                        </li>
-                        <li>
-                          <span class="label">Meeting Time:</span>
-                          <span>02:00 - 02:30<span class="small">pm</span></span>
-                        </li>
-                        <li>
-                          <span class="label">Meeting Location:</span>
-                          <span>Online Meeting</span>
-                        </li>
-                        <li>
-                          <span class="label">Meeting Link:</span>
-                          <span>Google Meet</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="table-header">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fas fa-credit-card fs-3"></i>
-                  <div class="d-flex flex-column gap-2 fw-light">
-                    <h4 class="">Pay the Rest of amount</h4>
-                    <p class="">For #255 Wedding Service</p>
-                  </div>
-                </div>
-                <h3 class="text-gold">
-                  2,000<span class="fs-6 fw-lighter">SAR</span>
-                </h3>
-              </div>
-              <div class="row d-flex p-4">
-                <!-- Left Column -->
-                <div class="col-md-7">
-                  <div class="fw-lighter d-flex flex-column gap-4">
-                    <h5 class="fw-light">You need to Pay <span class="text-gold">2,000<span
-                          class="fs-6 fw-lighter">SAR</span></span> to be able to confirm your service</h5>
-                    <p>
-                      Text to explain why user should pay this downpayment Text to explain why user should pay this
-                      downpayment Text to explain why user should pay this downpayment Text to explain why user should
-                      pay this downpayment.
-                    </p>
-                    <p>
-                      User should pay this why user should pay this downpayment Text to explain why user should pay this
-                      downpayment Text to explain why user should pay this downpayment Text to explain why user should
-                      pay this.
-                    </p>
-                    <h5 class="fw-bold">List of terms:</h5>
-                    <ul class="ms-4">
-                      <li>Text to explain why user should pay</li>
-                      <li>This downpayment Text to explain why user</li>
-                      <li>Should pay this downpayment</li>
-                      <li>Text to explain why user should pay</li>
-                      <li>This downpayment Text to explain why user</li>
-                      <li>Should pay this downpayment</li>
-                      <li>Text to explain why user should pay</li>
-                      <li>This downpayment Text to explain why user</li>
-                      <li>Should pay this downpayment</li>
-                      <li>Text to explain why user should pay</li>
-                    </ul>
-                  </div>
-
-                </div>
-                <!-- Right Column -->
-                <div class="col-md-5">
-                  <div class="rounded-5" style="border: 1px solid rgba(255, 255, 255, 0.1);">
-                    <div class="table-header">
-                      <h6>Choose your Payment Method</h6>
-                    </div>
-                    <div class="p-3 d-flex align-items-center flex-column gap-2">
-                      <button class="btn text-black bg-white rounded-4 px-4">
-                        <i class="far fa-credit-card"></i>
-                        Pay with Debit/Credit Card
+                <div class="row d-flex align-items-center p-4">
+                  <div class="col-md-6">
+                    <div class="d-flex flex-column gap-2">
+                      <h5>Why we need this meeting:</h5>
+                      <span class="py-2 fw-lighter">
+                        Text to explain why user should pay this downpayment Text to explain why user should pay this
+                        downpayment and so on.
+                      </span>
+                      <button class="btn bg-white mb-4 fw-bold text-black rounded-3">
+                        <i class="far fa-calendar-plus"></i>
+                        Add to your Calendar
                       </button>
-                      <div class="d-flex gap-2">
-                        <img src="./images/mastercard.svg" alt="item">
-                        <img src="./images/visa.svg" alt="item">
-                        <img src="./images/ex.svg" alt="item">
-                        <img src="./images/cash.svg" alt="item">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="rounded-5" style="border: 1px solid rgba(255, 255, 255, 0.1);">
+                      <div class="table-header">
+                        <h5>Your Meeting Details</h5>
+                      </div>
+                      <div class="p-3 ps-5">
+                        <ul class="meeting-details-list d-flex flex-column gap-3">
+                          <li>
+                            <span class="label">Meeting Date:</span>
+                            <span>18 Dec 2024</span>
+                          </li>
+                          <li>
+                            <span class="label">Meeting Time:</span>
+                            <span>02:00 - 02:30<span class="small">pm</span></span>
+                          </li>
+                          <li>
+                            <span class="label">Meeting Location:</span>
+                            <span>Online Meeting</span>
+                          </li>
+                          <li>
+                            <span class="label">Meeting Link:</span>
+                            <span>Google Meet</span>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            
-            <!-- Order History Tab -->
 
-            <div class="tab-pane fade table-profile" id="order-tab-pane" role="tabpanel" aria-labelledby="order-tab">
+              <!-- View TWO -->
+              <div class="table-profile">
+                <div class="table-header">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fas fa-credit-card fs-3"></i>
+                    <div class="d-flex flex-column gap-2 fw-light">
+                      <h4 class="">Pay the Rest of amount</h4>
+                      <p class="">For #255 Wedding Service</p>
+                    </div>
+                  </div>
+                  <h3 class="text-gold">
+                    2,000<span class="fs-6 fw-lighter">SAR</span>
+                  </h3>
+                </div>
+                <div class="row d-flex p-4">
+                  <!-- Left Column -->
+                  <div class="col-md-7">
+                    <div class="fw-lighter d-flex flex-column gap-4">
+                      <h5 class="fw-light">You need to Pay <span class="text-gold">2,000<span
+                            class="fs-6 fw-lighter">SAR</span></span> to be able to confirm your service</h5>
+                      <p>
+                        Text to explain why user should pay this downpayment Text to explain why user should pay this
+                        downpayment Text to explain why user should pay this downpayment Text to explain why user should
+                        pay this downpayment.
+                      </p>
+                      <p>
+                        User should pay this why user should pay this downpayment Text to explain why user should pay
+                        this
+                        downpayment Text to explain why user should pay this downpayment Text to explain why user should
+                        pay this.
+                      </p>
+                      <h5 class="fw-bold">List of terms:</h5>
+                      <ul class="ms-4">
+                        <li>Text to explain why user should pay</li>
+                        <li>This downpayment Text to explain why user</li>
+                        <li>Should pay this downpayment</li>
+                        <li>Text to explain why user should pay</li>
+                        <li>This downpayment Text to explain why user</li>
+                        <li>Should pay this downpayment</li>
+                        <li>Text to explain why user should pay</li>
+                        <li>This downpayment Text to explain why user</li>
+                        <li>Should pay this downpayment</li>
+                        <li>Text to explain why user should pay</li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <!-- Right Column -->
+                  <div class="col-md-5">
+                    <div class="rounded-5" style="border: 1px solid rgba(255, 255, 255, 0.1);">
+                      <div class="table-header">
+                        <h6>Choose your Payment Method</h6>
+                      </div>
+                      <div class="p-3 d-flex align-items-center flex-column gap-2">
+                        <button class="btn text-black bg-white rounded-4 px-4">
+                          <i class="far fa-credit-card"></i>
+                          Pay with Debit/Credit Card
+                        </button>
+                        <div class="d-flex gap-2">
+                          <img src="./images/mastercard.svg" alt="item">
+                          <img src="./images/visa.svg" alt="item">
+                          <img src="./images/ex.svg" alt="item">
+                          <img src="./images/cash.svg" alt="item">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- View three -->
+              <div class="table-profile">
+                <div class="table-header">
+                  <h5 class="fw-light">Basic box with a drawer</h5>
+                  <h3 class="text-gold">
+                    2,000<span class="fs-6 fw-lighter">SAR</span>
+                  </h3>
+                </div>
+                <div class="row p-4">
+                  <!-- First Section -->
+                  <div class="col-md-9">
+                    <div class="row row-cols-3 fs-6">
+                      <div class="col">
+                        <p class="fw-lighter">Name of the Bride & Groom:</p>
+                        <p>Remon Nabil, Remon Nabil</p>
+                      </div>
+                      <div class="col">
+                        <p class="fw-lighter">Name of the Bride & Groom:</p>
+                        <p>Remon Nabil, Remon Nabil</p>
+                      </div>
+                      <div class="col">
+                        <p class="fw-lighter">Name of the Bride & Groom:</p>
+                        <p>Remon Nabil, Remon Nabil</p>
+                      </div>
+                      <div class="col">
+                        <p class="fw-lighter">Name of the Bride & Groom:</p>
+                        <p>Remon Nabil, Remon Nabil</p>
+                      </div>
+                      <div class="col">
+                        <p class="fw-lighter">Name of the Bride & Groom:</p>
+                        <p>Remon Nabil, Remon Nabil</p>
+                      </div>
+                      <div class="col">
+                        <p class="fw-lighter">Name of the Bride & Groom:</p>
+                        <p>Remon Nabil, Remon Nabil</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="h-100 w-100 rounded-4 overflow-hidden position-relative text-center">
+                        <img src="./images/imagecard.png" class="w-100 h-100 object-fit-contain" alt="imagecard">
+                        <p class="position-absolute bottom-0 bg-main w-100 p-1 rounded-4">Wedding Services </p>
+                      </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Order History Tab -->
+
+          <div class="tab-pane fade" id="order-tab-pane" role="tabpanel" aria-labelledby="order-tab">
+            <!-- List History -->
+            <div class="table-profile">
               <div class="table-header">
                 <h5 class="mb-0">
                   <i class="fa-solid fa-clock-rotate-left"></i>
@@ -413,9 +485,10 @@
                   </tbody>
                 </table>
               </div>
+            </div>
 
-                          <!-- view Order History -->
-
+            <!-- view History -->
+            <div class="table-profile">
               <div class="table-header">
                 <h5 class="fw-light">Basic box with a drawer</h5>
                 <h3 class="text-gold">
@@ -466,6 +539,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
 
 

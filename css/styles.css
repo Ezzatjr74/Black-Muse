@@ -352,6 +352,32 @@ p {
   font-size: 80%;
 }
 
+#loginModal {
+  background-color: rgba(0, 0, 0, 0.6117647059);
+}
+#loginModal .modal-dialog .modal-content {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+#loginModal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+  color: #fff;
+  flex-direction: column;
+  padding: 0px;
+}
+
+#registerModal {
+  background-color: rgba(0, 0, 0, 0.6117647059);
+}
+#registerModal .modal-dialog .modal-content {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+#registerModal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+  color: #fff;
+  flex-direction: column;
+  padding: 0px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .respnsive-section {
     display: grid;
