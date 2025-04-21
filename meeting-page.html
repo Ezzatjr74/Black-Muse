@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="./css/owl.theme.default.min.css"> -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+
+  <title>Black Muse</title>
+</head>
+
+<body class="">
+
+
+  <!-- main navbar -->
+  <nav class="navbar navbar-expand-sm bg-main border-body pt-4" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="/main.html">
+        <img src="./images/mainLogo.svg" alt="Bootstrap" width="122" height="86">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse  d-md-flex flex-md-column align-items-end flex-sm-column-reverse "
+        id="navbarToggler">
+        <div class="d-flex gap-2 ">
+          <button class="btn  btn-outline-light rounded-4"> <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            Login</button>
+          <button class="btn  bg-white text-black rounded-4"><i class="fa-solid fa-user-plus"></i>
+            Register</button>
+          <button class="text-white btn"> <i class="fa-solid fa-globe"></i> عربي</button>
+        </div>
+
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Bindery & Lab</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="our-portfolio-page.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/about-us-page.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/contact-us-page.html">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero section -->
+  <section class="hero-inner bg-main">
+    <div class="text-hero">
+      <h1 class=" mb-1 fs-1 fw-lighter">Schedule<strong class="text-gold">Meeting</strong> With Us</h1>
+      <div aria-label="text-center text-white">
+        <a class="text-white fs-5 fw-lighter" href="">Home</a>
+        <span class="fw-lighter fs-5">/</span>
+        <a class="text-white fs-5 fw-lighter" href="">Meeting</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Meeting Section -->
+  <section class="meeting-section py-5 bg-main  ">
+    <div class="container">
+      <div class="table-profile">
+        <div class="table-header">
+          <h5 class="fw-light">Choose the Meeting Time</h5>
+          <div class="">
+            <select class="form-select">
+              <option value="1" selected>Online meeting</option>
+              <option value="2">Offline meeting</option>
+            </select>
+          </div>
+        </div>
+        <div class="row p-4">
+          <!-- First Section -->
+          <div class="col-md-6">
+            <div class="d-flex flex-column  pt-5">
+              <h5>Why we need this meeting:</h5>
+              <span class="py-2 fw-lighter">
+                Text to explain why user should pay this downpayment Text to explain why user should pay this
+                downpayment Text to explain why user should pay this downpayment Text to explain why user should pay
+                this downpayment Text to explain why user should pay this downpayment Text to explain why user should
+                pay this downpayment Text should pay this downpayment
+
+              </span>
+              <h5 class="fw-bold">List of terms:</h5>
+              <ul class="ms-4">
+                <li>Text to explain why user should pay</li>
+                <li>This downpayment Text to explain why user</li>
+                <li>Should pay this downpayment</li>
+                <li>Text to explain why user should pay</li>
+                <li>This downpayment Text to explain why user</li>
+                <li>Should pay this downpayment</li>
+                <li>Text to explain why user should pay</li>
+                <li>This downpayment Text to explain why user</li>
+                <li>Should pay this downpayment</li>
+                <li>Text to explain why user should pay</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="rounded-5" style="border: 1px solid rgba(255, 255, 255, 0.1);">
+              <div class="table-header">
+                <h5>Your Meeting Details</h5>
+              </div>
+              <div class="p-2 d-flex flex-column gap-2 align-items-center">
+                <div id="calendar"></div>
+                <button class="btn bg-white mb-1 fw-bold text-black rounded-3">
+                  <i class="far fa-calendar-plus"></i>
+                  Confirm This Date Now </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Meeting Section -->
+  <section class="meeting-section py-5  bg-main  ">
+    <div class="container">
+      <div class="table-profile">
+
+        <div class="table-header justify-content-center">
+          <h3 class="fs-md-3 fs-5">
+            Your Meeting Confirmed
+            <span class="bg-white text-black rounded px-1">
+              <i class="fas fa-check"></i>
+            </span>
+          </h3>
+        </div>
+        <div class="row d-flex align-items-center p-4">
+          <div class="col-md-6">
+            <div class="d-flex flex-column gap-2">
+              <h5>Why we need this meeting:</h5>
+              <span class="py-2 fw-lighter">
+                Text to explain why user should pay this downpayment Text to explain why user should pay this
+                downpayment and so on.
+              </span>
+              <button class="btn bg-white mb-4 fw-bold text-black rounded-3">
+                <i class="far fa-calendar-plus"></i>
+                Add to your Calendar
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="rounded-5" style="border: 1px solid rgba(255, 255, 255, 0.1);">
+              <div class="table-header">
+                <h5>Your Meeting Details</h5>
+              </div>
+              <div class="p-3 ps-5">
+                <ul class="meeting-details-list d-flex flex-column gap-3">
+                  <li>
+                    <span class="label">Meeting Date:</span>
+                    <span>18 Dec 2024</span>
+                  </li>
+                  <li>
+                    <span class="label">Meeting Time:</span>
+                    <span>02:00 - 02:30<span class="small">pm</span></span>
+                  </li>
+                  <li>
+                    <span class="label">Meeting Location:</span>
+                    <span>Online Meeting</span>
+                  </li>
+                  <li>
+                    <span class="label">Meeting Link:</span>
+                    <span>Google Meet</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- map section -->
+  <section class="position-relative">
+    <div class="contact-box p-sm-1 p-md-4 gap-sm-1 gap-md-3 bg-black">
+      <div class="d-flex align-items-center gap-3">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="text-white">
+          <p class="fw-lighter fs-5">address:</p>
+          <p class="fs-5">Level 7, Building 4.07, King Abdullah Financial District, Riyadh.</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <div class="text-white">
+          <p class="fw-lighter fs-5">Phone Numbers:</p>
+          <p class="fs-5">+966 11 207 4400, +966 11 490 3800.</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <i class="fa-regular fa-envelope"></i>
+        <div class="text-white">
+          <p class="fw-lighter fs-5">Email:</p>
+          <p class="fs-5">contact@blackmuse.com.sa</p>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9157.327597215864!2d31.227932588196442!3d30.046460985008842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840cf118e61cf%3A0xaf4aee1a5598653d!2sInterContinental%20Cairo%20Semiramis%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2seg!4v1740515458837!5m2!1sen!2seg"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- follow us section  -->
+  <section class="py-4 followus-section">
+    <div class=" container d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div>
+        <p class="text-white fs-5 mb-2">follow us Now!</p>
+        <div class="brands-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="d-flex gap-4">
+        <p class="terms-text">Terms of Sale</p>
+        <p class="terms-text ">Terms of Use</p>
+        <p class="terms-text"> Privacy Policy</p>
+      </div>
+    </div>
+  </section>
+  <!-- follow us section  -->
+  <section class="bg-main py-4">
+    <div class=" container d-flex align-items-center justify-content-between flex-wrap gap-2 text-white">
+      <p class="fw-lighter">All Rights Reserved © 2024</p>
+      <div class="d-flex gap-2">
+        <img src="./images/mastercard.svg" alt="item">
+        <img src="./images/visa.svg" alt="item">
+        <img src="./images/tabby.svg" alt="item" s>
+        <img src="./images/tamara.svg" alt="item">
+        <img src="./images/ex.svg" alt="item">
+        <img src="./images/cash.svg" alt="item">
+      </div>
+      <p class="fw-lighter">Developed By: <strong>
+          Exception.com.sa
+        </strong></p>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
