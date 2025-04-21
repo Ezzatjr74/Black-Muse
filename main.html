@@ -32,7 +32,8 @@
           <button class="btn btn-outline-light rounded-4" data-bs-toggle="modal" data-bs-target="#loginModal"> <i
               class="fa-solid fa-arrow-right-to-bracket"></i>
             Login</button>
-          <button class="btn  bg-white text-black rounded-4" data-bs-toggle="modal" data-bs-target="#registerModal"><i class="fa-solid fa-user-plus"></i>
+          <button class="btn  bg-white text-black rounded-4" data-bs-toggle="modal" data-bs-target="#registerModal"><i
+              class="fa-solid fa-user-plus"></i>
             Register</button>
           <button class="text-white btn"> <i class="fa-solid fa-globe"></i> عربي</button>
         </div>
@@ -112,10 +113,12 @@
       <!-- slider section -->
       <div class="services-carousel owl-carousel">
         <div class="service-card">
-          <img src="./images/imagecard.png" class="w-100 h-100 object-fit-contain"  alt="imagecard">
+          <img src="./images/imagecard.png" alt="imagecard">
           <div class="info-service px-1 py-3">
             <h5 class="">Wedding Services</h5>
-            <button class="btn btn-service" type="button">Choose a Package Now</button>
+            <button class="btn btn-service" data-bs-toggle="modal" data-bs-target="#calendarModalToggle"
+              type="button">Choose
+              a Package Now</button>
           </div>
         </div>
       </div>
@@ -174,7 +177,7 @@
           </a>
         </div>
         <div class="bindery-card">
-          <img src="./images/imagecard.png" class="w-100 h-100 object-fit-contain" alt="imagecard">
+          <img src="./images/imagecard.png" alt="imagecard">
           <div class="info-bindery p-3">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="">Wedding Services </h5>
@@ -191,7 +194,7 @@
           </div>
         </div>
         <div class="bindery-card">
-          <img src="./images/imagecard.png" class="w-100 h-100 object-fit-contain"  alt="imagecard">
+          <img src="./images/imagecard.png" alt="imagecard">
           <div class="info-bindery p-3">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="">Wedding Services </h5>
@@ -330,15 +333,16 @@
     </div>
   </section>
 
+
   <!--  Register Model -->
-  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal fade" id="registerModal" aria-labelledby="registerModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-4 fw-lighter" id="registerModalLabel">Create Your  <strong class="text-gold">
-              Account
-            </strong>Now</h1>
-          <p class="fw-lighter">Welcome to Black Muse</p>
+          <h1 class="modal-title fs-4 fw-lighter" id="registerModalLabel">Our <strong class="text-gold">
+              Weeding
+            </strong>Service</h1>
+          <p class="fw-lighter">List Of packages</p>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -349,31 +353,32 @@
             </div>
             <div class="col-md-6 col-12">
 
-            <input type="Name" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
-              placeholder="name">
-              </div>
-              <div class="col-md-6 col-12">
-            <input type="password" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
-              placeholder="repeat Password">
-              </div>
-              <div class="col-md-6 col-12">
-            <input type="password" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
-              placeholder="Password">
-              </div>
-              <div class="col-12">
-            <input type="Phone" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
-              placeholder="Phone Number">
-              </div>
-              <div class="col-12">
-            <button type="button" class="btn bg-white rounded-4 w-100 ">
-              Submit</button>
-              </div>
+              <input type="Name" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="name">
+            </div>
+            <div class="col-md-6 col-12">
+              <input type="password" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="repeat Password">
+            </div>
+            <div class="col-md-6 col-12">
+              <input type="password" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="Password">
+            </div>
+            <div class="col-12">
+              <input type="Phone" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="Phone Number">
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn bg-white rounded-4 w-100 ">
+                Submit</button>
+            </div>
 
           </form>
         </div>
       </div>
     </div>
   </div>
+
   <!-- Login Model -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
@@ -395,13 +400,314 @@
             <button type="button" class="btn bg-white rounded-4 w-100 ">
               <i class="fa-solid fa-arrow-right-to-bracket"></i> Login Now</button>
             <a class="border-secondary border-top pt-2 text-center text-secondary">Don’t Have Account</a>
-            <button type="button" class="btn bg-white rounded-4 w-100" data-bs-toggle="modal" data-bs-target="#registerModal">
+            <button type="button" class="btn bg-white rounded-4 w-100" data-bs-toggle="modal"
+              data-bs-target="#registerModal">
               <i class="fa-solid fa-arrow-right-to-bracket"></i> Register New Account</button>
           </form>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Calendar Modal -->
+  <div class="modal fade" id="calendarModalToggle" tabindex="-1" aria-labelledby="calendarModalLabelToggle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="calendarModalLabelToggle">Choose service Date</h5>
+        </div>
+        <div class="modal-body">
+          <div class="p-2 d-flex flex-column gap-2 align-items-center">
+            <input type="date" class="form-control w-75" />
+            <button class="btn bg-white mb-1 fw-bold text-black rounded-3" data-bs-toggle="modal"
+              data-bs-target="#packagesModalToggle">
+              <i class="far fa-calendar-plus"></i>
+              Confirm This Date Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages Modal (outside of Calendar Modal) -->
+  <div class="modal fade" id="packagesModalToggle" tabindex="-1" aria-labelledby="packagesModalLabelToggle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-4 fw-lighter" id="packagesModalLabelToggle">
+            Our <strong class="text-gold">Weeding</strong>Service
+          </h1>
+          <p class="fw-lighter">List of Packages</p>
+        </div>
+        <div class="modal-body">
+          <div class="packages-section">
+            <div class="package-card ">
+              <div class="header-card">
+                <h6>Package-1</h6>
+                <h3 class="text-gold">
+                  2,000<span class="fs-6 fw-lighter">SAR</span>
+                </h3>
+              </div>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <p>half day 5 hours</p>
+              <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#formPackagesModalToggle">Choose
+                a Package Now</button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- form Packages Modal (outside of Calendar Modal) -->
+  <div class="modal fade" id="formPackagesModalToggle" tabindex="-1" aria-labelledby="formPackagesModalLabelToggle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h1 class="modal-title fs-4 fw-lighter" id="foemPackagesModalLabelToggle">
+              Customize<strong class="text-gold">Package 03</strong> Service
+            </h1>
+            <p class="fw-lighter">Sample of Needed form you can change the inputs as you can</p>
+          </div>
+          <h3 class="text-gold">
+            2,000<span class="fs-6 fw-lighter">SAR</span>
+          </h3>
+        </div>
+        <div class="modal-body">
+          <form class="form-packages-section bg-main rounded-4 p-md-4 p-2">
+            <div>
+              <label class="form-label text-white fw-light">Name of the Bride & Groom:</label>
+              <input type="text" class="form-control bg-main rounded-4" placeholder="Type here...">
+            </div>
+            <div>
+              <label class="form-label text-white fw-light">Date:</label>
+              <input type="date" class="form-control bg-main rounded-4" placeholder="Choose from here">
+            </div>
+            <div class="file-upload">
+              <label class="form-label">Upload font sample:</label>
+              <label class="file-upload-label">
+                Attach file here
+                <input type="file" class="border-0">
+            </label>
+            </div>
+            <div>
+              <label class="form-label text-white fw-light">Number of album pages:*</label>
+              <select class="form-control bg-main rounded-4" placeholder="Choose from here">
+                <option value="1">10 pages</option>
+                <option value="1">20 pages</option>
+                </select>
+            </div>
+            <div>
+              <label class="form-label text-white fw-light">Album size:*</label>
+              <select class="form-control bg-main rounded-4" placeholder="Choose from here">
+                <option value="1">10 x 20</option>
+                <option value="1">20 x 30</option>
+                </select>
+            </div>
+            <div>
+              <label class="form-label text-white fw-light">How to open the album:*</label>
+              <select class="form-control bg-main rounded-4" placeholder="Choose from here">
+                <option value="1">from top</option>
+                <option value="1">from left</option>
+                </select>
+            </div>
+            <div>
+              <label class="form-label text-white fw-light">Create name page:</label>
+              <input type="text" class="form-control bg-main rounded-4" placeholder="Type here...">
+            </div>
+            <div>
+              <label class="form-label text-white fw-light">Create name design:</label>
+              <input type="text" class="form-control bg-main rounded-4" placeholder="Type here...">
+            </div>
+            <div class="file-upload">
+              <label class="form-label">Upload font sample:</label>
+              <label class="file-upload-label">
+                Attach file here
+                <input type="file" class="border-0">
+            </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p >
+            Step <strong >01</strong> out <strong >04</strong>
+        </p>
+        <div>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#packagesModalToggle" class="btn bg-transparent rounded-4 text-white me-2">
+            <i class="fas fa-arrow-left"></i>
+            Back
+        </button>
+        <button type="button" class="btn bg-white rounded-4 text-black" data-bs-toggle="modal" data-bs-target="#customPackagesModalToggle">
+          <i class="fas fa-arrow-right"></i>
+          Next Step
+        </button>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Customize Packages Modal (outside of Calendar Modal) -->
+  <div class="modal fade" id="customPackagesModalToggle" tabindex="-1" aria-labelledby="customPackagesModalLabelToggle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h1 class="modal-title fs-4 fw-lighter" id="foemPackagesModalLabelToggle">
+              Customize<strong class="text-gold">Package 03</strong> Service
+            </h1>
+            <p class="fw-lighter">Custom It Now</p>
+          </div>
+          <h3 class="text-gold">
+            2,000<span class="fs-6 fw-lighter">SAR</span>
+          </h3>
+        </div>
+        <div class="modal-body">
+          <div class="custom-packages-section">
+            <div class="package-card ">
+              <div class="item">
+                <h6>Package-1</h6>
+                <h3 class="text-gold">
+                  2,000<span class="fs-6 fw-lighter">SAR</span>
+                </h3>
+              </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+              <div class="item" >
+                <div class="d-flex gap-2" >
+                  <input type="checkbox" name="day" id="day">
+                  <label for="day">half day 5 hours</label>
+                  </div>
+                  <div>
+                    <h6 class="text-gold">
+                      2,000<span class="fw-lighter">SAR</span>
+                    </h6>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <p >
+            Step <strong >01</strong> out <strong >04</strong>
+        </p>
+        <div>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#formPackagesModalToggle" class="btn bg-transparent rounded-4 text-white me-2">
+            <i class="fas fa-arrow-left"></i>
+            Back
+        </button>
+        <button type="button" class="btn bg-white rounded-4 text-black">
+          <i class="fas fa-arrow-right"></i>
+          Next Step
+        </button>
+        </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="./js/bootstrap.bundle.js"></script>
