@@ -579,6 +579,39 @@ p {
   border: 1px solid #3a3c39;
 }
 
+.down-package-card {
+  background: #070707;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #3a3c39;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+.down-package-card .header-card {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.down-package-card p {
+  padding: 10px;
+  font-weight: 300;
+}
+.down-package-card > * {
+  border-bottom: 1px solid #3a3c39;
+}
+.down-package-card :last-child {
+  border-bottom: none;
+}
+.down-package-card button {
+  border-radius: 20px;
+  border: 1px solid #3a3c39;
+  margin: 20px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
 .file-upload {
   position: relative;
 }

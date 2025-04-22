@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/owl.carousel.min.css">
   <!-- <link rel="stylesheet" href="./css/owl.theme.default.min.css"> -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -419,7 +420,7 @@
         </div>
         <div class="modal-body">
           <div class="p-2 d-flex flex-column gap-2 align-items-center">
-            <input type="date" class="form-control w-75" />
+            <input type="text" id="datepicker">
             <button class="btn bg-white mb-1 fw-bold text-black rounded-3" data-bs-toggle="modal"
               data-bs-target="#packagesModalToggle">
               <i class="far fa-calendar-plus"></i>
@@ -503,28 +504,28 @@
               <label class="file-upload-label">
                 Attach file here
                 <input type="file" class="border-0">
-            </label>
+              </label>
             </div>
             <div>
               <label class="form-label text-white fw-light">Number of album pages:*</label>
               <select class="form-control bg-main rounded-4" placeholder="Choose from here">
                 <option value="1">10 pages</option>
                 <option value="1">20 pages</option>
-                </select>
+              </select>
             </div>
             <div>
               <label class="form-label text-white fw-light">Album size:*</label>
               <select class="form-control bg-main rounded-4" placeholder="Choose from here">
                 <option value="1">10 x 20</option>
                 <option value="1">20 x 30</option>
-                </select>
+              </select>
             </div>
             <div>
               <label class="form-label text-white fw-light">How to open the album:*</label>
               <select class="form-control bg-main rounded-4" placeholder="Choose from here">
                 <option value="1">from top</option>
                 <option value="1">from left</option>
-                </select>
+              </select>
             </div>
             <div>
               <label class="form-label text-white fw-light">Create name page:</label>
@@ -539,25 +540,27 @@
               <label class="file-upload-label">
                 Attach file here
                 <input type="file" class="border-0">
-            </label>
+              </label>
             </div>
           </form>
         </div>
         <div class="modal-footer">
-          <p >
-            Step <strong >01</strong> out <strong >04</strong>
-        </p>
-        <div>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#packagesModalToggle" class="btn bg-transparent rounded-4 text-white me-2">
-            <i class="fas fa-arrow-left"></i>
-            Back
-        </button>
-        <button type="button" class="btn bg-white rounded-4 text-black" data-bs-toggle="modal" data-bs-target="#customPackagesModalToggle">
-          <i class="fas fa-arrow-right"></i>
-          Next Step
-        </button>
-        </div>
+          <p>
+            Step <strong>01</strong> out <strong>04</strong>
+          </p>
+          <div>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#packagesModalToggle"
+              class="btn bg-transparent rounded-4 text-white me-2">
+              <i class="fas fa-arrow-left"></i>
+              Back
+            </button>
+            <button type="button" class="btn bg-white rounded-4 text-black" data-bs-toggle="modal"
+              data-bs-target="#customPackagesModalToggle">
+              <i class="fas fa-arrow-right"></i>
+              Next Step
+            </button>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -586,123 +589,124 @@
                   2,000<span class="fs-6 fw-lighter">SAR</span>
                 </h3>
               </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
-              <div class="item" >
-                <div class="d-flex gap-2" >
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
+              <div class="item">
+                <div class="d-flex gap-2">
                   <input type="checkbox" name="day" id="day">
                   <label for="day">half day 5 hours</label>
-                  </div>
-                  <div>
-                    <h6 class="text-gold">
-                      2,000<span class="fw-lighter">SAR</span>
-                    </h6>
-                  </div>
                 </div>
+                <div>
+                  <h6 class="text-gold">
+                    2,000<span class="fw-lighter">SAR</span>
+                  </h6>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <p >
-            Step <strong >01</strong> out <strong >04</strong>
-        </p>
-        <div>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#formPackagesModalToggle" class="btn bg-transparent rounded-4 text-white me-2">
-            <i class="fas fa-arrow-left"></i>
-            Back
-        </button>
-        <button type="button" class="btn bg-white rounded-4 text-black">
-          <i class="fas fa-arrow-right"></i>
-          Next Step
-        </button>
-        </div>
+          <p>
+            Step <strong>01</strong> out <strong>04</strong>
+          </p>
+          <div>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#formPackagesModalToggle"
+              class="btn bg-transparent rounded-4 text-white me-2">
+              <i class="fas fa-arrow-left"></i>
+              Back
+            </button>
+            <button type="button" class="btn bg-white rounded-4 text-black">
+              <i class="fas fa-arrow-right"></i>
+              Next Step
+            </button>
           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -710,6 +714,7 @@
 
 
   <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
   <script src="./js/bootstrap.bundle.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
