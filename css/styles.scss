@@ -460,88 +460,6 @@ p {
   }
 }
 
-#formPackagesModalToggle {
-  background-color: #0000009c;
-
-  .modal-dialog {
-    .modal-content {
-      background-color: #ffffff00 !important;
-
-      .modal-header {
-        border-bottom: none;
-        color: #fff;
-        justify-content: space-between;
-        padding: 0px;
-      }
-
-      .modal-footer {
-        border-top: none;
-        justify-content: space-between;
-
-        p {
-          color: #fff;
-          font-weight: 200;
-
-          strong {
-            font-weight: 700;
-          }
-        }
-      }
-    }
-  }
-}
-
-#customPackagesModalToggle {
-  background-color: #0000009c;
-
-  .modal-dialog {
-    .modal-content {
-      background-color: #ffffff00 !important;
-
-      .modal-header {
-        border-bottom: none;
-        color: #fff;
-        justify-content: space-between;
-        padding: 0px;
-      }
-
-      .modal-footer {
-        border-top: none;
-        justify-content: space-between;
-
-        p {
-          color: #fff;
-          font-weight: 200;
-
-          strong {
-            font-weight: 700;
-          }
-        }
-      }
-    }
-  }
-}
-
-#packagesModalToggle {
-  background-color: #0000009c;
-
-  .modal-dialog {
-    .modal-content {
-      background-color: #ffffff00 !important;
-
-      .modal-header {
-        border-bottom: none;
-        color: #fff;
-        flex-direction: column;
-        align-items: start;
-        padding: 0px;
-      }
-
-
-    }
-  }
-}
-
 .packages-section {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -635,11 +553,13 @@ p {
       justify-content: space-between;
       align-items: center;
       padding: 10px;
+
       input[type="checkbox"] {
         accent-color: #3a3c39;
         transform: scale(1.5);
 
       }
+
       label {
         font-weight: 200;
       }
@@ -658,6 +578,7 @@ p {
 
   }
 }
+
 .down-package-card {
   background: #070707;
   color: #fff;
@@ -682,7 +603,8 @@ p {
   >* {
     border-bottom: 1px solid #3a3c39;
   }
-  :last-child{
+
+  :last-child {
     border-bottom: none;
   }
 
@@ -694,6 +616,7 @@ p {
     color: #fff;
   }
 }
+
 .file-upload {
   position: relative;
 }
@@ -725,24 +648,56 @@ p {
     width: auto;
   }
 }
-.timebtn{
-border: 1px solid #fff;
-border-radius: 20px;
-color:#fff;
-font-weight: bold;
-span{
-  font-size: 10px;
-}
-&:hover{
+
+.timebtn {
   border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
 
-}
-&.selected{
-  background:  #fff;
-  color: #000;
+  span {
+    font-size: 10px;
+  }
 
+  &:hover {
+    border: 1px solid #fff;
+
+  }
+
+  &.selected {
+    background: #fff;
+    color: #000;
+
+  }
 }
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
 }
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .respnsive-section {
     display: grid;

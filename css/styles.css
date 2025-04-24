@@ -415,68 +415,6 @@ p {
   border-color: #3a3c39;
 }
 
-#formPackagesModalToggle {
-  background-color: rgba(0, 0, 0, 0.6117647059);
-}
-#formPackagesModalToggle .modal-dialog .modal-content {
-  background-color: rgba(255, 255, 255, 0) !important;
-}
-#formPackagesModalToggle .modal-dialog .modal-content .modal-header {
-  border-bottom: none;
-  color: #fff;
-  justify-content: space-between;
-  padding: 0px;
-}
-#formPackagesModalToggle .modal-dialog .modal-content .modal-footer {
-  border-top: none;
-  justify-content: space-between;
-}
-#formPackagesModalToggle .modal-dialog .modal-content .modal-footer p {
-  color: #fff;
-  font-weight: 200;
-}
-#formPackagesModalToggle .modal-dialog .modal-content .modal-footer p strong {
-  font-weight: 700;
-}
-
-#customPackagesModalToggle {
-  background-color: rgba(0, 0, 0, 0.6117647059);
-}
-#customPackagesModalToggle .modal-dialog .modal-content {
-  background-color: rgba(255, 255, 255, 0) !important;
-}
-#customPackagesModalToggle .modal-dialog .modal-content .modal-header {
-  border-bottom: none;
-  color: #fff;
-  justify-content: space-between;
-  padding: 0px;
-}
-#customPackagesModalToggle .modal-dialog .modal-content .modal-footer {
-  border-top: none;
-  justify-content: space-between;
-}
-#customPackagesModalToggle .modal-dialog .modal-content .modal-footer p {
-  color: #fff;
-  font-weight: 200;
-}
-#customPackagesModalToggle .modal-dialog .modal-content .modal-footer p strong {
-  font-weight: 700;
-}
-
-#packagesModalToggle {
-  background-color: rgba(0, 0, 0, 0.6117647059);
-}
-#packagesModalToggle .modal-dialog .modal-content {
-  background-color: rgba(255, 255, 255, 0) !important;
-}
-#packagesModalToggle .modal-dialog .modal-content .modal-header {
-  border-bottom: none;
-  color: #fff;
-  flex-direction: column;
-  align-items: start;
-  padding: 0px;
-}
-
 .packages-section {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -657,6 +595,33 @@ p {
 .timebtn.selected {
   background: #fff;
   color: #000;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
