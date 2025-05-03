@@ -1,9 +1,31 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("backToTopBtn");
+
+  if (!btn) {
+    console.error("Button not found!");
+    return;
+  }
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
+
+  btn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
 var mydir = $("html").attr("dir");
 if (mydir === "rtl") {
   var rtlVal = true;
 } else {
   var rtlVal = false;
 }
+
 $(document).ready(function () {
   $(".services-carousel").owlCarousel({
     rtl: rtlVal,
@@ -56,8 +78,10 @@ showTab(currentTab); // Display the current tab
 function showTab(n) {
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-  // ... and fix the Previous/Next buttons:
+  if (x.length > n && x[n]) {
+    x[n].style.display = "block";
+  }
+    // ... and fix the Previous/Next buttons:
   if (n == 0) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
@@ -100,3 +124,4 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+
