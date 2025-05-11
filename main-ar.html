@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="./css/owl.theme.default.min.css"> -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Black Muse</title>
+</head>
+
+<body class="">
+
+
+  <!-- main navbar -->
+  <div class="position-relative">
+    <nav class="navbar navbar-expand-sm bg-main border-body pt-4 opacity-75 position-absolute w-100 z-3"
+      data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/mainLogo.svg" alt="Bootstrap" width="122" height="86">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse  d-md-flex flex-md-column align-items-end flex-sm-column-reverse "
+          id="navbarToggler">
+          <div class="d-flex gap-2 ">
+            <button class="btn btn-outline-light rounded-4" data-bs-toggle="modal" data-bs-target="#loginModal"> <i
+                class="fa-solid fa-arrow-right-to-bracket"></i>
+              تسجيل الدخول</button>
+            <button class="btn  bg-white text-black rounded-4" data-bs-toggle="modal" data-bs-target="#registerModal"><i
+                class="fa-solid fa-user-plus"></i>
+              التسجبل</button>
+            <button class="text-white btn"> <i class="fa-solid fa-globe"></i> عربي</button>
+          </div>
+
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">خدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">معمل تجليد و مختبر</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="our-portfolio-page.html">مَلَفّ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about-us-page.html">معلومات عنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact-us-page.html">اتصل بنا</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section class="hero">
+      <video autoplay muted loop preload="auto" playsinline>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+
+    </section>
+  </div>
+
+
+
+
+
+  <!-- Schedule section  -->
+  <section class="bg-d-gray">
+    <div class="container  py-3 d-flex justify-content-between align-items-center">
+      <h4 class="text-white fw-lighter">
+        جدولة <strong class="text-gold"> مكالمة أو اجتماع!</strong>
+      </h4>
+      <div class="d-flex gap-2 ">
+        <button class="btn  btn-outline-light rounded-4"> <i class="fa-solid fa-arrow-right-to-bracket"></i> مكالمة أو
+          اجتماع!</button>
+        <button class="btn  bg-white text-black rounded-4">
+          <i class="fa-solid fa-user-plus"></i>
+          جدولة المكالمة</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Services section -->
+  <section class="bg-main py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="text-white fw-lighter">
+          <h2 class="fw-lighter">
+            خدماتنا في
+            <strong class="text-gold">بلاك ميوز</strong>
+          </h2>
+          <p class="fs-4"> ما نقدمه</p>
+        </div>
+        <a class="d-flex align-items-center text-secondary gap-1 btn">
+          <p class="">عرض الكل</p>
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+      <!-- slider section -->
+      <div class="services-carousel owl-carousel">
+        <div class="service-card">
+          <img src="./images/imagecard.png" alt="imagecard">
+          <div class="info-service px-1 py-3">
+            <h5 class="">خدمات الزفاف</h5>
+            <button class="btn btn-service" data-bs-toggle="modal" data-bs-target="#calendarModalToggle"
+              type="button">اختر باقة الآن</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Category section -->
+  <section class="bg-main py-3 porto-section" style="background-image: url(./images/portohero.png);">
+    <div class="row h-100">
+      <div class="col-md-4 my-auto">
+        <div class="porto-summry text-white d-flex flex-column  gap-2 z-3 mb-2  mx-md-5 mx-2 ">
+          <p class="fw-lighter">فئة المحفظة</p>
+          <h1 class="text-gold lh-1">
+            بلاك ميوز
+          </h1>
+          <h1 class="fw-bolder lh-1">
+            محفظة كلاسيكية </h1>
+          <p class="fw-lighter">من المعروف منذ زمن طويل أن القارئ سوف ينشغل بالمحتوى المقروء لصفحة ما عند النظر إلى
+            تخطيطها.</p>
+          <button type="button" class="btn btn-outline-light rounded-4 p-2 align-self-baseline fw-lighter">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            انظر محفظتنا</button>
+        </div>
+      </div>
+      <div class="col-md-8 mt-auto mb-4 ps-md-5">
+        <div class="portfolio-carousel owl-carousel z-3">
+          <div class="porto-card ">
+            <img class="porto-img" src="./images/portoslide.png" alt="imagecard">
+            <p class="porto-title w-75 text-wrap">خدمات الزفاف خدمات الزفاف</p>
+          </div>
+
+          <div class="porto-card ">
+            <img class="porto-img" src="./images/portoslide.png" alt="imagecard">
+            <p class="porto-title w-75 text-wrap">خدمات الزفاف خدمات الزفاف</p>
+          </div>
+
+          <div class="porto-card ">
+            <img class="porto-img" src="./images/portoslide.png" alt="imagecard">
+            <p class="porto-title w-75 text-wrap">خدمات الزفاف خدمات الزفاف</p>
+          </div>
+
+          <div class="porto-card ">
+            <img class="porto-img" src="./images/portoslide.png" alt="imagecard">
+            <p class="porto-title w-75 text-wrap">خدمات الزفاف خدمات الزفاف</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bindery & Lab section -->
+  <section class="bg-main py-5">
+    <div class="container">
+      <div class="respnsive-section ">
+        <div class="fw-lighter">
+          <h2 class="fw-lighter text-white">
+            خدمات
+            <strong class="text-gold"> التجليد والمختبرات</strong>
+
+          </h2>
+          <p class="fs-4 text-white">اكتشف المزيد</p>
+          <a class="d-flex align-items-center text-secondary gap-1 btn">
+            <p class="">عرض الكل</p>
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="bindery-card">
+          <img src="./images/imagecard.png" alt="imagecard">
+          <div class="info-bindery p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="">خدمات الزفاف</h5>
+              <div>
+                <span class="fw-lighter">يبدأ من</span>
+                <div class="d-flex align-items-center gap-1">
+                  <p class="fs-4 lh-1">200 </p>
+                  <span class="text-uppercase fw-lighter lh-1">SAR</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-bindery" type="button"><i class="fa-solid fa-arrow-right-to-bracket"></i> اختر باقة
+              الآن</button>
+          </div>
+        </div>
+        <div class="bindery-card">
+          <img src="./images/imagecard.png" alt="imagecard">
+          <div class="info-bindery p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="">خدمات الزفاف</h5>
+              <div>
+                <span class="fw-lighter">يبدأ من</span>
+                <div class="d-flex align-items-center gap-1">
+                  <p class="fs-4 lh-1">200 </p>
+                  <span class="text-uppercase fw-lighter lh-1">SAR</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-bindery" type="button"><i class="fa-solid fa-arrow-right-to-bracket"></i> اختر باقة
+              الآن</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section class="about-section py-5 " style="background-image: url(./images/about-bg.png);">
+    <div class="container d-flex flex-column gap-3 text-white">
+      <h2 class="fw-lighter text-white">
+        عن
+        <strong class="text-gold">بلاك ميوز</strong>
+      </h2>
+      <p class="fw-lighter fs-5"> بدأت رحلتي خلف العدسة عام ٢٠١٢ عندما اخترتُ التصوير الفوتوغرافي كمقرر اختياري في جامعة
+        الملك عبد العزيز بجدة، وهو ما تزامن بشكلٍ مفاجئ مع دراستي الطبية. تخرجتُ عام ٢٠١٥، ولم أحمل شهادة جامعية فحسب،
+        بل كان لديّ أيضًا شغفٌ بالتعبير.</p>
+      <div>
+        <h6 class="fs-4">
+          صقل مهاراتي وبناء الاستوديو الخاص بي: بين عامي 2015 و2018        </h6>
+        <p class="fw-lighter fs-5">
+          وفي عام ٢٠١٩، كرّست نفسي لصقل مهاراتي في التصوير الفوتوغرافي تحت إشراف مدربين ومصورين عالميين. وفي عام ٢٠١٨، تحوّل حلمي بتأسيس "استوديو ريم عوض" إلى حقيقة.
+        </p>
+      </div>
+      <div>
+
+        <h6 class="fs-4">
+          بلاك ميوز بقلم ريم عوض:        </h6>
+        <p class="fw-lighter fs-5">
+          ملاذٌ للتميز الإبداعي: ​​"بلاك ميوز" هو الوجهة المثالية لالتقاط أثمن لحظات الحياة.
+
+          بتجهيزاتنا المتطورة واستوديوهاتنا الداخلية، نقدم مجموعةً من الخدمات، بما في ذلك جلسات تصوير الأزواج والعائلات وجلسات تصوير الأمومة. خدماتنا الاحترافية في التصوير الخارجي، إلى جانب معداتنا عالية الجودة وفريقنا الذي يتمتع بخبرة تزيد عن 7 سنوات، تضمن نتائج مبهرة.
+        </p>
+      </div>
+      <div>
+        <h6 class="fs-4">
+          التوسع والابتكار:        </h6>
+        <p class="fw-lighter fs-5">
+          لتقديم خدمة أفضل لعملائنا، أطلقنا خدمات التصوير الجوي عام ٢٠١٨، لنصبح من رواد هذا المجال الذي يحظى بإقبال كبير. من حفلات الزفاف إلى فعاليات الشركات، تُضفي خدمات التصوير الجوي لدينا لمسةً فريدةً على أي مناسبة.
+        </p>
+      </div>
+      <button type="button" class="btn btn-outline-light rounded-4 p-2 align-self-baseline fw-lighter ms-auto">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i> انظر محفظتنا</button>
+    </div>
+  </section>
+
+
+  <!-- map section -->
+  <section class="position-relative">
+    <div class="contact-box p-sm-1 p-md-4 gap-sm-1 gap-md-3 bg-black">
+      <div class="d-flex align-items-center gap-3">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="text-white">
+          <p class="fw-lighter fs-5">عنوان:</p>
+          <p class="fs-5">الطابق السابع، مبنى 4.07، مركز الملك عبدالله المالي، الرياض.</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <div class="text-white">
+          <p class="fw-lighter fs-5">أرقام الهاتف:</p>
+          <p class="fs-5">+966 11 207 4400, +966 11 490 3800.</p>
+        </div>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <i class="fa-regular fa-envelope"></i>
+        <div class="text-white">
+          <p class="fw-lighter fs-5">بريد إلكتروني :</p>
+          <p class="fs-5">contact@blackmuse.com.sa</p>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9157.327597215864!2d31.227932588196442!3d30.046460985008842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840cf118e61cf%3A0xaf4aee1a5598653d!2sInterContinental%20Cairo%20Semiramis%2C%20an%20IHG%20Hotel!5e0!3m2!1sen!2seg!4v1740515458837!5m2!1sen!2seg"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- follow us section  -->
+  <section class="py-4 followus-section">
+    <div class=" container d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div>
+        <p class="text-white fs-5 mb-2">تابعونا الآن!</p>
+        <div class="brands-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+      <div class="d-flex gap-4">
+        <p class="terms-text">شروط البيع</p>
+        <p class="terms-text ">شروط الاستخدام</p>
+        <p class="terms-text"> سياسة الخصوصية</p>
+      </div>
+    </div>
+  </section>
+  <!-- follow us section  -->
+  <section class="bg-main py-4">
+    <div class=" container d-flex align-items-center justify-content-between flex-wrap gap-2 text-white">
+      <p class="fw-lighter">All Rights Reserved © 2024</p>
+      <div class="d-flex gap-2">
+        <img src="./images/mastercard.svg" alt="item">
+        <img src="./images/visa.svg" alt="item">
+        <img src="./images/tabby.svg" alt="item" s>
+        <img src="./images/tamara.svg" alt="item">
+        <img src="./images/ex.svg" alt="item">
+        <img src="./images/cash.svg" alt="item">
+      </div>
+      <p class="fw-lighter">Developed By: <strong>
+          Exception.com.sa
+        </strong></p>
+    </div>
+  </section>
+
+
+  <!--  Register Model -->
+  <div class="modal fade" id="registerModal" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-4 fw-lighter" id="registerModalLabel">Our <strong class="text-gold">
+              خدمات
+            </strong>الزفاف</h1>
+          <p class="fw-lighter">قائمة الحزم</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="contact-us-form row gy-3 bg-main">
+            <div class="col-md-6 col-12">
+              <input type="email" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="email address">
+            </div>
+            <div class="col-md-6 col-12">
+
+              <input type="Name" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="name">
+            </div>
+            <div class="col-md-6 col-12">
+              <input type="password" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="repeat Password">
+            </div>
+            <div class="col-md-6 col-12">
+              <input type="password" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="Password">
+            </div>
+            <div class="col-12">
+              <input type="Phone" class="form-control bg-main rounded-4 col-md-6 " id="registerFormControlInput1"
+                placeholder="Phone Number">
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn bg-white rounded-4 w-100 ">
+                يُقدِّم</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Model -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-4 fw-lighter" id="registerModalLabel">تسجيل الدخول إلى <strong class="text-gold">
+            حسابك
+            </strong></h1>
+          <p class="fw-lighter">مرحباً بكم في بلاك ميوز</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="contact-us-form d-flex flex-column  gap-3 bg-main">
+            <input type="email" class="form-control bg-main rounded-4 w-100" id="loginFormControlInput1"
+              placeholder="email address">
+
+            <input type="password" class="form-control bg-main rounded-4 w-100" id="loginFormControlInput1"
+              placeholder="Password">
+            <button type="button" class="btn bg-white rounded-4 w-100 ">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل الدخول الآن</button>
+            <a class="border-secondary border-top pt-2 text-center text-secondary">ليس لدي حساب</a>
+            <button type="button" class="btn bg-white rounded-4 w-100" data-bs-toggle="modal"
+              data-bs-target="#registerModal">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i> تسجيل حساب جديد</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calendar Modal -->
+  <div class="modal fade" id="calendarModalToggle" tabindex="-1" aria-labelledby="calendarModalLabelToggle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="calendarModalLabelToggle">اختر تاريخ الخدمة</h5>
+        </div>
+        <div class="modal-body">
+          <div class="p-2 d-flex flex-column gap-2 align-items-center">
+            <input type="text" id="datepicker" />
+            <button class="btn bg-white mb-1 fw-bold text-black rounded-3">
+              <i class="far fa-calendar-plus"></i>
+              تأكيد هذا التاريخ الآن            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="backToTopBtn" title="Go to top">↑</button>
+
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
